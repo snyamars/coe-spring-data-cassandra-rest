@@ -1,7 +1,0 @@
-/home/ranajitjana/project/workspace/coe-spring-data-cassandra-rest/src/main/java/com/wipro/coe/microservices/data/promotions/ConverterConfiguration.java
-/home/ranajitjana/project/workspace/coe-spring-data-cassandra-rest/src/main/java/com/wipro/coe/microservices/data/promotions/entity/Promotion.java
-/home/ranajitjana/project/workspace/coe-spring-data-cassandra-rest/src/main/java/com/wipro/coe/microservices/data/promotions/CoeSpringDataCassandraRestApplication.java
-/home/ranajitjana/project/workspace/coe-spring-data-cassandra-rest/src/main/java/com/wipro/coe/microservices/data/promotions/configurations/BasicConfiguration.java
-/home/ranajitjana/project/workspace/coe-spring-data-cassandra-rest/src/main/java/com/wipro/coe/microservices/data/promotions/entity/Offer.java
-/home/ranajitjana/project/workspace/coe-spring-data-cassandra-rest/src/main/java/com/wipro/coe/microservices/data/promotions/entity/CustomPromotion.java
-/home/ranajitjana/project/workspace/coe-spring-data-cassandra-rest/src/main/java/com/wipro/coe/microservices/data/promotions/PromotionRepository.java
