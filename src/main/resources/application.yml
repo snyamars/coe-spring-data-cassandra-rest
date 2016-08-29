@@ -9,7 +9,9 @@ spring:
   data:
     cassandra:
       cluster-name: abc
-      contact-points: 172.17.0.2
+      contact-points: localhost
       port: 9042
       keyspace-name: coe
       
+      
+        
