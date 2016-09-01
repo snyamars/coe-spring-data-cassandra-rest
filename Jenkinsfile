@@ -5,7 +5,7 @@ node {
 
    // Get the microservice code from a GitHub repository
 
-   checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'PerBuildTag']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '146ff225-d9c5-4466-9ae0-3ff4c646ff30', url: 'https://github.com/snyamars/coe-spring-web.git']]]
+   checkout changelog: false, poll: false, scm: [$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'PerBuildTag']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '146ff225-d9c5-4466-9ae0-3ff4c646ff30', url: 'https://github.com/snyamars/coe-spring-data-cassandra-rest.git']]]
 
    // Get the maven tool.
    // ** NOTE: This 'M3' maven tool must be configured
@@ -28,7 +28,7 @@ node {
   
   sh "${mvnHome}/bin/mvn clean package"
   
-   def fileName = "/var/lib/jenkins/workspace/${env.JOB_NAME}/coe-spring-web-0.0.1-SNAPSHOT.jar"
+   def fileName = "/var/lib/jenkins/workspace/${env.JOB_NAME}/coe-spring-data-cassandra-rest-0.0.1-SNAPSHOT.jar"
    echo "filename... $fileName"
   def word1 = "warfile=${fileName}"
   echo "word1 ... ${word1}"
@@ -40,7 +40,7 @@ node {
   echo "${tag_value}"
   
   
-  def artifactLocation ="/var/lib/jenkins/workspace/${env.JOB_NAME}/coe-spring-web"
+  def artifactLocation ="/var/lib/jenkins/workspace/${env.JOB_NAME}/coe-spring-data-cassandra-rest"
   
   stage 'Git Tagging'
   
@@ -48,13 +48,13 @@ node {
   {
       //sh("git tag -a ${env.BUILD_NUMBER}  -m 'Jenkins'")
       sh("git tag -a springweb_${tag_value}_${env.BUILD_NUMBER}  -m 'Jenkins'")
-      sh('git push https://"${GIT_USERNAME}":"${GIT_PASSWORD}"@github.com/snyamars/coe-spring-web.git --tags')
+      sh('git push https://"${GIT_USERNAME}":"${GIT_PASSWORD}"@github.com/snyamars/coe-spring-data-cassandra-rest.git --tags')
   }
   
 stage 'docker build'
   
   docker.withRegistry('', 'f6ab1d37-c2cf-4636-80b9-7745dffd4695') {
-        def pcImg = docker.build('snyamars007/spring-ms-web')
+        def pcImg = docker.build('snyamars007/spring-ms-data')
         pcImg.push();
   }
   
