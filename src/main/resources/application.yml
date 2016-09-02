@@ -6,6 +6,7 @@ spring:
       discovery:
         healthCheckPath: /health
         healthCheckInterval: 15s
+        port: 30065
   data:
     cassandra:
       cluster-name: abc
