@@ -9,7 +9,7 @@
                             "-Dlogging.file=/tmp/coe-spring-data-cassandra.log",
                             "-Dspring.cloud.config.uri=http://172.31.0.153:8888",
                             "-Dspring.data.cassandra.contact-points=172.31.0.153",
-                            "-Dspring.cloud.consul.host=172.31.0.153",
+                            "-Dspring.cloud.consul.host=52.207.226.140",
                             "-Dspring.cloud.consul.discovery.port=30065",
                             "coe-spring-data-cassandra-rest-0.0.1-SNAPSHOT.jar"
                         ]}
