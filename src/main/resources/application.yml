@@ -1,11 +1,12 @@
 spring:
   cloud:
     consul:
-      host: localhost
+      host: 52.207.226.140
       port: 8500
       discovery:
         healthCheckPath: /health
         healthCheckInterval: 15s
+        hostname: 52.207.226.140
         port: 30065
   data:
     cassandra:
