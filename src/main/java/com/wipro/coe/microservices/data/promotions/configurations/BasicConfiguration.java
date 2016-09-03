@@ -23,7 +23,6 @@ import com.datastax.driver.core.Session;
 class BasicConfiguration {
 
 	@Configuration
-	//@PropertySource(value = { "classpath:cassandra.properties" })
 	@EnableCassandraRepositories
 	static class CassandraConfig extends AbstractCassandraConfiguration {
 

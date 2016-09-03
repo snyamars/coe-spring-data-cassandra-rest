@@ -1,3 +1,14 @@
 spring:
   application:
     name: coe-cassandra-promotions
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        healthCheckPath: /health
+        healthCheckInterval: 15s
+        hostname: localhost
+        port: 8090
+    

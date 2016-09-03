@@ -12,16 +12,16 @@ import org.springframework.test.context.junit4.SpringRunner;
 import com.wipro.coe.microservices.data.promotions.entity.Offer;
 import com.wipro.coe.microservices.data.promotions.entity.Promotion;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class CoeSpringDataCassandraRestApplicationTests {
 
-	@Test
+	//@Test
 	public void contextLoads() {
 	}
 
 	
-	@Test
+	//@Test
 	public void TestInsertPromotions()
 	
 	{
