@@ -18,7 +18,7 @@
                             "-Dcom.sun.management.jmxremote.rmi.port=30070",
                             "-Dcom.sun.management.jmxremote.port=30070",
                             "-Djava.rmi.server.hostname=52.20.37.21",
-                            "coe-spring-data-cassandra-rest-0.0.1-SNAPSHOT.jar"
+                            "coe-spring-data-cassandra-rest-0.0.1-SNAPSHOT.jar" 
                         ]}
         ]
 }
