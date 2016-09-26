@@ -1,7 +1,7 @@
 {
     "id": "spring-ms-data",
     "application": "Spring-MicroService",
-    "accesspoint": "http://172.31.0.233:8080",
+    "accesspoint": "http://54.158.120.240:8080",
     "containers": [
         {"name": "data", "replicas": 1, "cpu": 1100, "memory": "1000Mi", "port": 30065, "image": "snyamars007/spring-ms-data", "command": [
                             "java",
@@ -17,7 +17,7 @@
                             "-Dcom.sun.management.jmxremote.ssl=false",
                             "-Dcom.sun.management.jmxremote.rmi.port=30070",
                             "-Dcom.sun.management.jmxremote.port=30070",
-                            "-Djava.rmi.server.hostname=54.158.120.240",
+                            "-Djava.rmi.server.hostname=54.161.126.197",
                             "coe-spring-data-cassandra-rest-0.0.1-SNAPSHOT.jar" 
                         ]}
         ]
