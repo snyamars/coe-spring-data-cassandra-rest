@@ -1,7 +1,7 @@
 {
     "id": "spring-ms-data",
     "application": "Spring-MicroService",
-    "accesspoint": "http://54.158.120.240:8080",
+    "accesspoint": "http://54.161.126.197:8080",
     "containers": [
         {"name": "data", "replicas": 1, "cpu": 1100, "memory": "1000Mi", "port": 30065, "image": "snyamars007/spring-ms-data", "command": [
                             "java",
